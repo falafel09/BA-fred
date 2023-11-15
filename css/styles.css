@@ -26,3 +26,115 @@ p {
 footer {
     text-align: center;
 }
+/* Réinitialisation de certains styles par défaut */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style du menu */
+
+
+    nav {
+        background-image: url('img/banière.png'); /* Remplacez par le chemin de votre image */
+        background-size: cover; /* Couvre toute la zone du menu */
+        background-repeat: no-repeat; /* Empêche la répétition de l'image */
+        background-position: center; /* Centre l'image */
+}
+
+
+
+nav > ul {
+    display: flex;
+    justify-content: center; /* Centre les éléments du menu */
+}
+
+nav ul li {
+    margin: 0 10px; /* Espacement entre les éléments du menu */
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none; /* Enlève le soulignement des liens */
+    color: white; /* Texte blanc */
+    font-weight: bold; /* Texte en gras */
+    transition: background-color 0.3s; /* Animation de fond */
+}
+
+
+
+nav ul li:hover > ul {
+    display: block; /* Affiche les sous-menus au survol */
+}
+
+/* Style des liens dans les sous-menus */
+nav ul ul a {
+    padding: 5px 10px; /* Padding plus petit pour les sous-menus */
+    color: #fff; /* Texte blanc */
+}
+
+nav ul ul a:hover {
+    background-color: #7a1fa2; /* Couleur de fond au survol dans les sous-menus */
+}
+
+/* Style du menu au survol et au clic */
+nav ul li a:hover, nav ul li a:active {
+    background-color: #7a1fa2; /* Couleur plus foncée au survol/clic */
+    border-radius: 5px; /* Coins arrondis pour l'effet au survol/clic */
+}
+
+/* Style pour le bouton du menu hamburger */
+#menu-toggle {
+    display: none; /* Cache le bouton par défaut */
+    font-size: 24px; /* Taille du symbole hamburger */
+    background: none;
+    border: none;
+    color: white; /* Couleur du symbole hamburger */
+}
+
+
+@media screen and (min-width: 1037px) {
+    nav ul ul {
+        display: none; /* Cache les sous-menus par défaut */
+        position: absolute; /* Positionne les sous-menus */
+        background-color: #9b30ff; /* Couleur de fond des sous-menus */
+        border-radius: 5px; /* Coins arrondis pour les sous-menus */
+        padding: 5px; /* Un peu de padding autour des sous-menus */
+        min-width: 200px; /* Largeur minimale pour les sous-menus */
+    }
+}
+
+/* Style pour les écrans de moins de 768px */
+@media screen and (max-width: 1037px) {
+    /* Affiche le bouton du menu hamburger */
+    #menu-toggle {
+        display: block;
+    }
+
+    /* Cache le menu par défaut */
+    #menu {
+        display: none;
+    }
+
+    /* Affiche le menu lorsque la classe 'active' est ajoutée */
+    #menu.active {
+        display: block;
+    }
+    nav ul ul {
+        display: block; /* Affiche toujours les sous-menus */
+        background-color: pink; /* Fond rose pour les sous-menus */
+        padding: 5px;
+        border-radius: 5px; /* Coins arrondis pour les sous-menus */
+    }
+
+    nav ul ul a {
+        padding: 5px 10px;
+        color: #fff; /* Texte blanc pour les sous-menus */
+        display: block;
+    }
+
+
+    /* Autres styles pour le menu et les sous-menus... */
+}
