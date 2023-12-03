@@ -6,3 +6,10 @@ document.addEventListener('DOMContentLoaded', function() {
         menu.classList.toggle('active');
     });
 });
+
+
+const scroll = new LocomotiveScroll();
+
+scroll.on('call', func => {
+    console.log("hi");
+});

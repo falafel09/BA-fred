@@ -73,9 +73,18 @@ Links zu Ihren Profilen in sozialen Netzwerken, einschließlich TikTok.
 Kontaktformular für Fragen oder Zusammenarbeit
 
 ## 5 step: Make a Burger menu for Phone compatibility
-1) neue menu gemacht
-2) Html burger menu zugefügt
+1) neue menu design gemacht
+- neue unter zeiten (erstmal nur auf den Index)
+2) Burger Mebu im Html zugefügt
 3) javascript dok gemacht/ verbunden
 4) css gestaltung
 - ab 1037 px auf desktop ist der Menu normal verfügbar
-- unter 1037 px ist 
+- unter 1037 px ist der Menu als Burger Menu wie auf Smartphone verfügbar.
+5) Add a picture in the menu
+- design it with css (topping,..)
+- add the right google font
+
+## 6 step: write my html page
+- I have made sure in advance that I have added all the necessary pages and that they are all connected to the nav.
+## 7 step: tiktok eingebetet.
+## 8 step: update menu bar...

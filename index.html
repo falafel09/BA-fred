@@ -5,19 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travail de Bachelor sur TikTok</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/locomotive-scroll.css">
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
     <script src="js/script.js" defer></script>
+
 </head>
 <body>
     <nav>
-        <video autoplay loop muted playsinline>
-            <source src="img/banière.png" type="img">
-        </video>
-        <button id="menu-toggle">☰</button>
+        <div class="nav-background"></div>
+              
+       <button id="menu-toggle">☰</button>
         <ul id="menu">
             <li><a href="index.html">The Project</a>
                 <ul>
-                    <li><a href="">Einführung</a></li>
-                    <li><a href="">Hauptziele</a></li>
+                    <li><a href="/#intro">Einführung</a></li>
+                    <li><a href="/#theory">Hauptziele</a></li>
                 </ul></li>
             <li><a href="problematique.html">Theoretische Sicht</a>
                 <ul>
@@ -27,30 +29,52 @@
                 </ul></li>
             <li><a href="praktisch.html">Praxisansicht</a>
                 <ul>
-                    <li><a href="">Anwendung der Theorie:</a></li>
-                    <li><a href="">Logbuch:</a></li>
-                    <li><a href="">Analyse der Ergebnisse:</a></li>
+                    <li><a href="praktisch.html">Anwendung der Theorie:</a></li>
+                    <li><a href="logbuch.html">Logbuch:</a></li>
+                    <li><a href="analyse.html">Analyse der Ergebnisse:</a></li>
                 </ul></li>
             <li><a href="tiktok.html">My Tiktok Galerie</a></li>
             <li><a href="aboutme.html">About Me</a></li>
             <li><a href="kontakt.html">Kontakt</a></li>
-        </ul>
+        </ul>  
     </nav>
-    <header>
-        <h1>Travail de Bachelor sur la  </h1>
-    </header>
+    <!-- <header>
+    </header> -->
     <main>
-        <section>
-            <h2>Présentation du créateur de contenu</h2>
-            <p>Ce travail se concentre sur [Nom du créateur], un artiste émergent qui utilise TikTok pour promouvoir sa musique.</p>
+
+
+
+        <div data-scroll data-scroll-call="{y,o,l,o}">Trigger</div>
+
+
+
+        <section id="intro">
+            <h2>Bienvenue sur [Votre Nom] - Explorer l'Art de TikTok
+                Bienvenue dans mon aventure académique et créative où je fusionne théorie et pratique pour déchiffrer les secrets du succès sur TikTok. Je suis [Votre Nom], étudiant(e) en Bachelor, passionné(e) par l'impact des médias sociaux dans le monde de la musique et de l'art.
+                
+                Mon Projet de Bachelor : Une Quête en Deux Volets
+                Mon travail de Bachelor se divise en deux parties essentielles : une recherche théorique approfondie sur les critères qui définissent le succès des contenus sur TikTok, et une expérimentation pratique où j'applique ces découvertes pour promouvoir ma propre musique.</h2>
+            
         </section>
-        <section>
-            <h2>Impact de TikTok sur la musique</h2>
-            <p>TikTok a révolutionné la manière dont les artistes partagent et promeuvent leur musique. Découvrez comment [Nom du créateur] a utilisé cette plateforme pour atteindre un public plus large.</p>
+
+        <!-- Section de la théorie -->
+        <section id="theory">
+            <h2>La Théorie : Au Cœur des Contenus Viraux sur TikTok</h2>
+            <p>Dans la section théorique, je plonge dans l'univers de TikTok pour identifier ce qui fait qu'une vidéo captive et engage...</p>
         </section>
+
+        <!-- Section de la pratique -->
+        <section id="practice">
+            <h2>La Pratique : TikTok et Mon Univers Musical</h2>
+            <p>La partie pratique est mon terrain de jeu expérimental. Pendant 1 à 2 mois, je crée quotidiennement des contenus TikTok...</p>
+        </section>
+
+        <!-- Autres sections ici... -->
+
     </main>
+
     <footer>
-        <p>Travail de Bachelor réalisé par [Votre nom]</p>
+        <p>© Frédéric Panchaud. Tous droits réservés.</p>
     </footer>
 </body>
 </html>
