@@ -88,3 +88,5 @@ Kontaktformular für Fragen oder Zusammenarbeit
 - I have made sure in advance that I have added all the necessary pages and that they are all connected to the nav.
 ## 7 step: tiktok eingebetet.
 ## 8 step: update menu bar...
+## 8 step: new texte with animation
+I put a new picture in the index and above a texte with a animation.

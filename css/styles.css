@@ -12,12 +12,53 @@ html {
 
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
-    padding: 0px;
-    background-color: #ffffff;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.photo-container {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.photo-container img {
+    width: 100%;
+    height: auto;
+}
+
+.info {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
 header, main, footer {
     max-width: 1000px;
     margin: 20px auto;
@@ -26,13 +67,26 @@ header, main, footer {
     /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
 }
 
-h1, h2 {
+
+h2 {
+    color: rgb(70, 69, 69);
+    font-size: 2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h3 {
     color: #333;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5em;
+    margin-bottom: 15px;
 }
 
 p {
+    font-size: 1em;
     color: #666;
-    line-height: 1.5;
+    margin-bottom: 20px;
 }
 
 .flexbox {
@@ -43,9 +97,7 @@ p {
 
 .tiktok-embed {margin: 0!important; padding: 0!important; min-width: 50px!important; max-width: 50%!important; }
 
-footer {
-    text-align: center;
-}
+
 /* Réinitialisation de certains styles par défaut */
 ul {
     list-style-type: none;
@@ -86,7 +138,7 @@ nav ul li a {
     display: block;
     padding: 10px 20px;
     text-decoration: none; /* Enlève le soulignement des liens */
-    color: #bc75a1; /* Texte blanc */
+    color: #d42e00; /* Texte blanc */
     font-weight: bold; /* Texte en gras */
     transition: background-color 0.3s; /* Animation de fond */
     /*mix-blend-mode: difference;*/
@@ -133,13 +185,13 @@ nav ul li a:hover {
 
 /*Submenu*/
 nav ul li ul li a:active {
-    color: #bc75a1;
+    color: #d42e00;
     background-color:  rgba(255,255,255,0.1); /* Couleur plus foncée au survol/clic */
     border-radius: 5px; /* Coins arrondis pour l'effet au survol/clic */
 }
 
 nav ul li ul li a:hover {
-    color: #bc75a1;
+    color: #d42e00;
     background-color:  rgba(255,255,255,0.1); /* Couleur plus foncée au survol/clic */
     border-radius: 5px; /* Coins arrondis pour l'effet au survol/clic */
 }
@@ -165,7 +217,14 @@ nav ul li ul li a:hover {
     display: block; /* Élimine tout espace indésirable sous l'image */
     margin: 0 auto; /* Centre l'image horizontalement si elle est plus petite que la largeur maximale */
 }
-
+.image3-container img {
+    width: 30%; 
+    height: auto; /* Garde le ratio de l'image */
+    display: block; /* Élimine tout espace indésirable sous l'image */
+    margin: 0 auto;
+    color: #666;
+    line-height: 1.6;
+}
 @media screen and (min-width: 1283px) {
     nav ul ul {
         display: none; /* Cache les sous-menus par défaut */
@@ -216,6 +275,24 @@ nav ul li ul li a:hover {
 
 
     /* Autres styles pour le menu et les sous-menus... */
+}
+.log-entry {
+    background-color: #e7e7e7;
+    border-radius: 10px;
+    margin: 10px 0;
+    padding: 15px;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.log-entry h3 {
+    color: #e8491d;
+    margin-bottom: 10px;
+}
+
+.log-entry p {
+    color: #666;
+    line-height: 1.6;
 }
 
 
