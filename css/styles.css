@@ -153,7 +153,18 @@ nav ul li ul li a:hover {
     color: white; /* Couleur du symbole hamburger */
 
 }
+.image-container {
+    text-align: center; /* Centre l'image horizontalement */
+    margin: 20px 0; /* Ajoute un peu d'espace autour de l'image */
+}
 
+.image-container img {
+    width: 100%; /* Fait en sorte que l'image prenne toute la largeur du conteneur */
+    max-width: 600px; /* Limite la largeur maximale de l'image */
+    height: auto; /* Garde le ratio de l'image */
+    display: block; /* Élimine tout espace indésirable sous l'image */
+    margin: 0 auto; /* Centre l'image horizontalement si elle est plus petite que la largeur maximale */
+}
 
 @media screen and (min-width: 1283px) {
     nav ul ul {
@@ -211,4 +222,18 @@ nav ul li ul li a:hover {
 @media screen and (max-width: 767px) {
     .tiktok-embed {max-width: 100%!important; }
 
+}
+.highlighted-text {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #d42e00;
+    text-align: center;
+    animation: blinker 1.5s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
 }
